@@ -1,0 +1,17 @@
+.get_button{
+    width: 7%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 5%;
+    font-weight: bold;
+    background-color: rgb(51, 124, 51);
+    color: white;
+}
+
+.get_button:hover{
+    background-color: white;
+    color: rgb(51, 124, 51);
+}

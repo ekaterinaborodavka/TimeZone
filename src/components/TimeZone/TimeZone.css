@@ -1,0 +1,9 @@
+.category_time_zone{
+    font-size: 1.2rem;
+    width: 35%;
+    margin: 1rem auto;
+}
+
+select{
+    padding: 0.2rem;
+}

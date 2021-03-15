@@ -1,0 +1,38 @@
+.container {
+    font-size: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 2rem auto;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgb(51, 124, 51);
+    color: rgb(51, 124, 51);
+    padding-bottom: 1rem;
+}
+
+.time_zone_wrapper, .date_time_wrapper{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    width: 45%;
+}
+
+
+.times_wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub-title{
+    margin: 1rem;
+    text-align: center;
+}
+
