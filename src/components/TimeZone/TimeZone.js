@@ -1,10 +1,17 @@
 import React, { useCallback } from 'react';
 import { useDispatch} from 'react-redux';
-
-import './TimeZone.css';
+import styled from 'styled-components'
 
 import { categoryTimeZones } from '~src/Mocks/CategoryTimeZone';
 import * as actions from '~src/Store/actions/actions';
+
+const Select = styled.select`
+  font-size: 1.2rem;
+  width: 40%;
+  margin: 1rem auto;
+  padding: 0.3rem;
+  border: 1px solid black;
+`
 
 export default function TimeZone() {
   const dispatch = useDispatch();
@@ -16,8 +23,7 @@ export default function TimeZone() {
   );
 
   return (
-    <select className='category_time_zone'
-      onChange = { onChange }>
+    <Select onChange = { onChange }>
       <option> Select time zone </option>
       {
         categoryTimeZones.map(({ id, name, timeZone, value }) => (
@@ -31,6 +37,6 @@ export default function TimeZone() {
           </option>
         ))
       }
-    </select>
+    </Select>
   );
 }
