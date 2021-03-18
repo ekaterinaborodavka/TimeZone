@@ -1,6 +1,6 @@
 import {
   UPDATE_TIME_ZONE,
-  GET_TIME,
+  SYNCHRONIZE_TIME_ZONE_DATE,
 } from '../types/types.js';
 
 export const updateTimeZone = (value) => {
@@ -12,6 +12,6 @@ export const updateTimeZone = (value) => {
 
 export const getTime = () => {
   return {
-    type: GET_TIME,
+    type: SYNCHRONIZE_TIME_ZONE_DATE,
   };
 };

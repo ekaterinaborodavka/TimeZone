@@ -1,12 +1,11 @@
 import {
   UPDATE_TIME_ZONE,
-  GET_TIME,
+  SYNCHRONIZE_TIME_ZONE_DATE,
 } from '../types/types';
 
 const initialState = {
   date: new Date(),
-  value: '',
-  dateToTimeZone: '',
+  timizone: 0,
 };
 
 const reducer = (state = initialState, action) => {
@@ -15,16 +14,14 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         date: new Date(),
-        value: action.value,
-        dateToTimeZone: '',
+        timizone: action.value,
       };
     }
-    case GET_TIME: {
-      const date = state.date.getTime();
-      const newDate = date + state.value*3600*1000;
+    case SYNCHRONIZE_TIME_ZONE_DATE: {
+      const timestamp = Date.now() + state.timizone*3600*1000;
       return {
         ...state,
-        dateToTimeZone: new Date(newDate),
+        date: new Date(timestamp),
       };
     }
     default:

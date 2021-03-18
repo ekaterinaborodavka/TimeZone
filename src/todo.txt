@@ -1,0 +1,12 @@
+react-i18-next (local resources)
+
+{
+    _dateFormat
+    "Current Date": "Current Date"
+}
+
+prettier
+
+storybook
+
+разбить на ui

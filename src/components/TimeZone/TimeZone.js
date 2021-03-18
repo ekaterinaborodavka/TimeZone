@@ -1,17 +1,9 @@
 import React, { useCallback } from 'react';
 import { useDispatch} from 'react-redux';
-import styled from 'styled-components'
 
-import { categoryTimeZones } from '~src/Mocks/CategoryTimeZone';
+import { categoryTimeZones } from '../../mocks/CategoryTimeZone';
+import Select from '~src/ui/Select/Select';
 import * as actions from '~src/Store/actions/actions';
-
-const Select = styled.select`
-  font-size: 1.2rem;
-  width: 40%;
-  margin: 1rem auto;
-  padding: 0.3rem;
-  border: 1px solid black;
-`
 
 export default function TimeZone() {
   const dispatch = useDispatch();
@@ -29,11 +21,8 @@ export default function TimeZone() {
         categoryTimeZones.map(({ id, name, timeZone, value }) => (
           <option
             key={ id }
-            timezone={ timeZone }
-            value={ value }
-          >
-            { name } /
-            { timeZone }
+            value={ value }>
+            { name } / { timeZone }
           </option>
         ))
       }
