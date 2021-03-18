@@ -49,14 +49,14 @@ export default function App() {
 
   return (
     <DivContainer>
-      <H1 className='title'>Current Date</H1>
-      <DivTimesWrapp className='times_wrapper'>
-        <DivTimesZonesWrapp className='time_zone_wrapper'>
-          <H2 className='sub-title'>Time Zone</H2>
+      <H1>Current Date</H1>
+      <DivTimesWrapp>
+        <DivTimesZonesWrapp>
+          <H2>Time Zone</H2>
           <TimeZone />
         </DivTimesZonesWrapp>
-        <DivTimesZonesWrapp className='date_time_wrapper'>
-          <H2 className='sub-title'>Date Time</H2>
+        <DivTimesZonesWrapp>
+          <H2>Date Time</H2>
           <DateTime />
         </DivTimesZonesWrapp>
       </DivTimesWrapp>
