@@ -14,6 +14,6 @@ export default function SynchronizeTimeZoneButton() {
   );
 
   return (
-    <SynchronizeButton onClick={ onGetTime }>GET</SynchronizeButton>
+    <SynchronizeButton onClick={ onGetTime }>SYNCHRONIZE TIME ZONE</SynchronizeButton>
   );
 }

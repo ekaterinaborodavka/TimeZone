@@ -2,7 +2,7 @@ import React from 'react';
 
 import DateTime from '~src/components/DateTime/DateTime';
 import TimeZone from '~src/components/TimeZone/TimeZone';
-import SynchronizeTimeZoneButton from '../SynchronizeTimeZoneButton/SynchronizeTimeZoneButton';
+import SynchronizeTimeZoneButton from '~src/components/SynchronizeTimeZoneButton/SynchronizeTimeZoneButton';
 import Container from '~src/ui/Container/Container';
 import H1 from '~src/ui/H1/H1';
 import H2 from '~src/ui/H2/H2';
